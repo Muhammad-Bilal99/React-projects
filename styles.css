@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(assets/pattern-background-desktop.svg) no-repeat;
+  background-position: top;
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container {
+  width: 350px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  margin-block: 2rem;
+}
+
+.image {
+  height: 150px;
+  background: url(./assets/illustration-hero.svg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  padding-inline: 10%;
+  gap: 1.5rem;
+}
+
+.text-container p {
+  text-align: center;
+  opacity: 70%;
+}
+
+.annual-plan-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: hsl(225, 100%, 98%);
+  padding: 14px 10px;
+  width: 100%;
+  border-radius: 6px;
+}
+
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+
+.plan span {
+  opacity: 70%;
+  font-weight: 500;
+}
+
+.annual-plan-container a {
+  align-self: right;
+  color: hsl(245, 75%, 52%);
+}
+
+.btn-container {
+  width: 100%;
+}
+
+.proceed {
+  width: 100%;
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  padding-block: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 300ms ease-out;
+}
+
+.proceed:hover {
+  background-color: hsl(245, 75%, 42%);
+}
+
+.cancel {
+  width: 100%;
+  margin-top: .5rem;
+  background: transparent;
+  font-weight: 600;
+  padding-block: 10px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  opacity: 70%;
+}
+
+.img {
+  height: 40px; width: 40px;
+  background: url(./assets/icon-music.svg) no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@media screen and (max-width: 480px) {
+  .main-container {
+    max-width: 270px;
+  }
+
+  .image {
+    height: 170px;
+  }
+}
