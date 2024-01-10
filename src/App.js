@@ -1,22 +1,17 @@
-import './App.css';
-import { Header } from'./components/Header.js';
-import { Balance } from'./components/Balance.js';
-import { IncomeExpenses } from'./components/IncomeExpenses';
-import { TransactionList } from'./components/TransactionList';
-import { AddTransaction } from'./components/AddTransaction';
+import React from 'react'
+import About from "./components/About";
+import Footer from "./components/Footer";
+import Info from "./components/Info";
+import './styles.scss';
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <Header />
-      <div className='container'>
-        <Balance />
-        <IncomeExpenses />
-        <TransactionList />
-        <AddTransaction/>
-      </div>
+    <div className='App'>
+      <Info/>
+      <About/>
+      <Footer/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

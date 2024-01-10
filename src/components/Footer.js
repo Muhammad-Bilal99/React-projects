@@ -1,11 +1,17 @@
-import { Link } from 'react-router-dom'
+import React from 'react'
+import Github from '../images/GitHub Icon.png';
+import Instagram from '../images/Instagram Icon.png';
+import Twitter from '../images/Twitter Icon.png';
+import Facebook from '../images/Facebook Icon.png';
 
 const Footer = () => {
   return (
-    <footer>
-      <p>Copyright &copy; 2021</p>
-      <Link to='/about'>About</Link>
-    </footer>
+    <div className='footer-container'>
+      <img src={Instagram}/>
+      <img src={Facebook}/>
+      <img src={Github}/>
+      <img src={Twitter}/>
+    </div>
   )
 }
 
